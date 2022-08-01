@@ -7,6 +7,7 @@
 ##### 目录结构：
 
 ```bash
+otherLink # 里面存放一些别人总结的知识点或者其他资源什么的
 src # 存放梳理的知识点
 	handwriting # 存放常见的手写题
 		css # css 手写题
