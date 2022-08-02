@@ -1,0 +1,22 @@
+##### null和undefined的区别？
+
+1、null是关键字，undefined不是关键字
+
+2、使用Number进行类型转换的时候null是0，undefined是NaN
+
+3、undefined本质是window的一个属性，而null是一个对象
+
+4、用途不同：
+
+​	null表示没有对象，即不应该有值，经常作为函数的参数，或作为原型链的终点
+
+​	undefined表示缺少值，即应该是有值的但是还没有赋值，变量提升时默认就是undefined、函数参数未提供参数的时候也是undefined、函数返回默认值就是undefined、对象属性没有赋值的时候也是undefined
+
+5、null表示一个"无"的对象，也就是该处不应该有值；而undefined表示未定义。
+
+##### 联系：
+
+1、转为布尔类型值得时候，两者都是false
+
+2、两者进行比较得时候，全等时不等，双等时相等
+
