@@ -13,4 +13,10 @@
 - [剑指 Offer 22. 链表中倒数第k个节点](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 - [415. 字符串相加](https://leetcode.cn/problems/add-strings/)
 - [46. 全排列](https://leetcode.cn/problems/permutations/)
+- [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/)
+- [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
+- [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)
+- [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
+- [93. 复原 IP 地址](https://leetcode.cn/problems/restore-ip-addresses/)
+- [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)
 
