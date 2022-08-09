@@ -19,4 +19,10 @@
 - [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
 - [93. 复原 IP 地址](https://leetcode.cn/problems/restore-ip-addresses/)
 - [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)
-
+- [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/)
+- [230. 二叉搜索树中第K小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/)
+- [15. 三数之和](https://leetcode.cn/problems/3sum/)
+- [141. 环型链表](https://leetcode.cn/problems/linked-list-cycle/)
+- [429. N 叉树的层序遍历](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/)
+- [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)
+- [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)

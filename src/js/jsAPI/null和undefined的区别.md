@@ -20,3 +20,12 @@
 
 2、两者进行比较得时候，全等时不等，双等时相等
 
+##### undefined 和 undeclared 的区别：
+undefined是声明了但是未初始化，而undeclared是指变量未声明。
+```js
+var a;
+typeof a; //undefined  
+typeof b; //undefined  
+```
+而typeof 在处理undeclared和undefined变量时返回的都是undefined，这是因为typeof底层实现的时候加入了安全防范机制，所以typeof 来判断未声明变量时不会报错。
+
