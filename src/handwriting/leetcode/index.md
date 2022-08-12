@@ -1,4 +1,5 @@
-[LeetcodeTop/这个里面是一些leetcode笔试真题](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/frontend.md)一定要刷一遍！
+[LeetcodeTop/这个里面是一些leetcode笔试真题](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/frontend.md)一定要刷一遍！（未刷完）
+[一个字节佬给前端er的建议，文末有算法题，建议刷一遍](https://www.nowcoder.com/discuss/996023?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)（未开刷）
 
 推荐网址：[codeTop](https://codetop.cc/home)
 
@@ -26,3 +27,9 @@
 - [429. N 叉树的层序遍历](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/)
 - [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)
 - [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
+- [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/)
+- [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
+- [62. 不同路径](https://leetcode.cn/problems/unique-paths/)
+- [94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/submissions/)
+- [343. 整数拆分](https://leetcode.cn/problems/integer-break/)
+- [5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
