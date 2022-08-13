@@ -1,10 +1,11 @@
 [LeetcodeTop/这个里面是一些leetcode笔试真题](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/frontend.md)一定要刷一遍！（未刷完）
 [一个字节佬给前端er的建议，文末有算法题，建议刷一遍](https://www.nowcoder.com/discuss/996023?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)（未开刷）
+[一个前辈的面经建议看](https://www.nowcoder.com/discuss/993849)
 
 推荐网址：[codeTop](https://codetop.cc/home)
 
 - [3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
--  [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/)
+- [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/)
 - [129. 求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/)
 - [112. 路径总和](https://leetcode.cn/problems/path-sum/)
 - [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
@@ -33,3 +34,9 @@
 - [94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/submissions/)
 - [343. 整数拆分](https://leetcode.cn/problems/integer-break/)
 - [5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
+- [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)
+- [2. 两数相加](https://leetcode.cn/problems/add-two-numbers/)
+- [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
+- [179. 最大数](https://leetcode.cn/problems/largest-number/)
+- [136. 只出现一次的数字](https://leetcode.cn/problems/single-number/)
+- [14. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/)
