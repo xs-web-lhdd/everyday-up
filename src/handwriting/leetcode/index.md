@@ -1,5 +1,5 @@
 [LeetcodeTop/这个里面是一些leetcode笔试真题](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/frontend.md)一定要刷一遍！（未刷完）
-[一个字节佬给前端er的建议，文末有算法题，建议刷一遍](https://www.nowcoder.com/discuss/996023?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)（未开刷）
+[一个字节佬给前端er的建议，文末有算法题，建议刷一遍](https://www.nowcoder.com/discuss/996023?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)（已刷完）
 [一个前辈的面经建议看](https://www.nowcoder.com/discuss/993849)
 
 推荐网址：[codeTop](https://codetop.cc/home)
@@ -40,3 +40,15 @@
 - [179. 最大数](https://leetcode.cn/problems/largest-number/)
 - [136. 只出现一次的数字](https://leetcode.cn/problems/single-number/)
 - [14. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/)
+- [283. 移动零](https://leetcode.cn/problems/move-zeroes/)
+- [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/)
+- [19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
+- [82. 删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
+- [83. 删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
+- [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
+- [155. 最小栈](https://leetcode.cn/problems/min-stack/submissions/)
+- [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/submissions/)
+- [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
+- [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/)
+- [139. 单词拆分](https://leetcode.cn/problems/word-break/)
+- [525. 连续数组---未刷](https://leetcode.cn/problems/contiguous-array/)
