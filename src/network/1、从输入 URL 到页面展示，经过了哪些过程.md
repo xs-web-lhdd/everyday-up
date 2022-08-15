@@ -10,3 +10,8 @@
 [字节面试被虐后，是时候搞懂 DNS 了 - 掘金 (juejin.cn)](https://juejin.cn/post/6990344840181940261)  说实话B站一搜还是很好的
 
 https://www.bilibili.com/video/BV1JZ4y1f7tU?from=search&seid=9229912515884661837&spm_id_from=333.337.0.0
+
+
+
+##### 服务端返回的第一的文件是啥？
+index.html

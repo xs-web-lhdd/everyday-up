@@ -20,6 +20,40 @@ WeakMap 结构与 Map 结构类似，也是用于生成键值对的集合。
 4. `WeakSet` 没有 `size` 属性。
 
 
+##### Map、weakMap、Set、weakSet 的 API 用法：
+Map: 
+- size 返回键值对的数目
+- clear 从对象中和删除所有键值对
+- delete(key) 删除某一个键值对
+- get(key) 获取 key 对应的值
+- has(key) 检查是否有该 key
+- set(key, value) 设置键值对
+- keys() 返回一个新的 Iterator 对象，该对象包含按插入顺序排列的对象中每个元素的键。
+- values() 返回一个新的 Iterator 对象，该对象包含按插入顺序排列的对象中每个元素的值
+- entries() 返回一个新的 Iterator 对象，该对象按插入顺序包含对象中每个元素的 [键、值] 数组。
+- forEach()
+
+WeakMap:
+- delete(key) 删除与 关联的任何值
+- get(key) 返回与 关联的值，如果没有，则返回 undefined。
+- has(key) 返回布尔值，检验是否有该值
+- set(key, value) 设置键值对
+
+Set:
+- size
+- add(value)
+- clear()
+- delete()
+- has(value)
+- values()
+- keys()
+- enties()
+- forEach
+
+WeakSet:
+- add()
+- delete()
+- has()
 
 ##### map与object区别？
 
