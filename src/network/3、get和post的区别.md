@@ -14,3 +14,7 @@ GET POST HEAD OPTIONS PUT DELETE TRACE CONNECT
     - Post 可以通过 request body来传输⽐ Get 更多的数据，Get 没有这个技术
     - URL有⻓度限制，会影响 Get 请求，但是这个⻓度限制是浏览器规定的，不是技术规定的
     - Post ⽀持更多的编码类型且不对数据类型限制
+
+
+##### 知道哪些请求方式？为什么要分这么多的请求方式？
+get post head put delete options trace connect

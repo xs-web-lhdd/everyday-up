@@ -5,30 +5,46 @@
 如果有一个是 pending 的 Promise，则返回一个状态是 pending 的新实例；
 
 ```js
-Promise.allSettled = function(promiseArr) {
-    let result = []
-        
-    return new Promise((resolve, reject) => {
-        promiseArr.forEach((p, i) => {
-            Promise.resolve(p).then(val => {
-                result.push({
-                    status: 'fulfilled',
-                    value: val
-                })
-                if (result.length === promiseArr.length) {
-                    resolve(result) 
-                }
-            }, err => {
-                result.push({
-                    status: 'rejected',
-                    reason: err
-                })
-                if (result.length === promiseArr.length) {
-                    resolve(result) 
-                }
-            })
-        })  
-    })   
-}
+    Promise.allSettled = function (promiseArr) {
+      let result = [], count = 0
+      return new Promise((resolve, reject) => {
+        promiseArr.forEach((p, index) => {
+          Promise.resolve(p).then(res => {
+            count++
+            result[index] = {
+              status: 'fulfilled',
+              value: res
+            }
+            if (count === promiseArr.length) {
+              resolve(result)
+            }
+          }, err => {
+            count++
+            result[index] = {
+              status: 'rejected',
+              value: err
+            }
+            if (count === promiseArr.length) {
+              resolve(result)
+            }
+          })
+        });
+      })
+    }
+```
+```js
+// 测试用例：
+    function createPromise(res, timer) {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(res), timer * 1000)
+      })
+    }
+
+    var arr = [1, createPromise('pppp', 4), createPromise('qqq', 1), 2]
+
+
+    Promise.allSettled(arr).then(res => {
+      console.log(res);
+    })
 ```
 

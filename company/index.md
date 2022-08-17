@@ -14,3 +14,13 @@
 
 #### 滴滴：(都说面试体验好)
 - 杭州滴滴（）
+
+#### 万集：
+都说 hr 挂人，附三篇面经，感觉偏八股文，有的题目很冷门
+[一](https://www.nowcoder.com/discuss/994431?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)
+[二](https://www.nowcoder.com/discuss/988905?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)
+[三](https://www.nowcoder.com/discuss/999031?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)
+
+#### 字节：
+- 成都商业化部门-生活服务（附面经：https://www.nowcoder.com/discuss/1003878?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
+- 番茄小说-ai lab （附面经：https://www.nowcoder.com/discuss/1008783?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
