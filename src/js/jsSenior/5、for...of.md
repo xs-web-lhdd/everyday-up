@@ -13,7 +13,38 @@
 在对象上添加 `symbol.iterator` 属性'
 
 实现:
+```js
+var obj = {
+  name: 'H2O',
+  age: 100,
+  address: 'xxxxx'
+}
 
-```jsd
+obj[Symbol.iterator] = function () {
+  let index = 0
+  let keys = Object.keys(this)
+  let self = this
+
+  return {
+    next() {
+      if (index < keys.length) {
+        return {
+          value: self[keys[index++]],
+          done: false
+        }
+      } else {
+        return {
+          value: undefined,
+          done: true
+        }
+      }
+    }
+  }
+}
+
+// 测试：
+for (let item of obj) {
+  console.log(item);
+}
 ```
 

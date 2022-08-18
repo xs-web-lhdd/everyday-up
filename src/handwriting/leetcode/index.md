@@ -54,3 +54,10 @@
 - [525. 连续数组---未刷](https://leetcode.cn/problems/contiguous-array/)
 - [127. 单词接龙---未刷](https://leetcode.cn/problems/word-ladder/)
 - [144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
+- [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-bnary-tree/submissions/)
+- [113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/)
+- [468. 验证IP地址](https://leetcode.cn/problems/validate-ip-address/) 又臭又长不写了，直接看官方题解吧臭傻逼！
+- [31. 下一个排列](https://leetcode.cn/problems/next-permutation/)
+- [235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [两个栈模拟队列的出队和入队---未刷]()
+- [面试题 01.06. 字符串压缩---未刷](https://leetcode.cn/problems/compress-string-lcci/)

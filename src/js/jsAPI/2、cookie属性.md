@@ -32,5 +32,6 @@ SameSite用来限制第三方 Cookie，从而减少安全风险。它有3个属�
 - Strict：最为严格，完全禁止第三方Cookie，跨站点时，任何情况下都不会发送Cookie
 
 - Lax：规则稍稍放宽，大多数情况也是不发送第三方 Cookie，但是导航到目标网址的 Get 请求除外。
+  但如果在第三⽅站点中使⽤Post⽅法，或者通过img、iframe等标签加载的URL，这些场景都不会携带Cookie。
 
 - None：网站可以选择显式关闭SameSite属性，将其设为None。不过，前提是必须同时设置Secure属性（Cookie 只能通过 HTTPS 协议发送），否则无效。
