@@ -45,3 +45,30 @@ new Promise(function(resolve){
 阅读: 
 [字节佬讲解](https://zhuanlan.zhihu.com/p/142742003)
 [简书一文](https://www.jianshu.com/p/ba5828330aec)
+
+
+
+```js
+function fun(a, b) {
+  console.log(b)
+  return {
+    fun: function (c) {
+      return fun(c, a);
+    }
+  };
+}
+
+var d = fun(0);
+d.fun(1);
+d.fun(2);
+d.fun(3);
+
+var d1 = fun(0).fun(1).fun(2).fun(3);
+
+
+var d2 = fun(0).fun(1);
+d2.fun(2);
+d2.fun(3);
+```
+> 知识点：作用域 访问VO AO
+> 注意：return 的 {} 不是作用域！不是作用域！不是作用域！

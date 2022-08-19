@@ -1,7 +1,5 @@
-##### 1、字符串压缩：
-题目：将 'aaabbbcccc' 压缩成 '3a3b4c'
+##### 面试题 01.06. 字符串压缩:
 ```js
-// 面试题 01.06. 字符串压缩:
 /**
  * @param {string} s
  * @return {string}
@@ -12,15 +10,14 @@ var compressString = function (s) {
   for (let i = 0; i < s.length; i++) {
     if (!arr.length || arr[arr.length - 1] === s[i]) arr.push(s[i])
     else {
-      ans += `${arr.length}${arr[arr.length - 1]}`
+      ans += `${arr[arr.length - 1]}${arr.length}`
       arr.length = 0
       arr.push(s[i])
     }
   }
 
-  ans += `${arr.length}${arr[arr.length - 1]}`
+  ans += `${arr[arr.length - 1]}${arr.length}`
 
-  return ans
+  return ans.length < s.length ? ans : s
 };
-```
 ```

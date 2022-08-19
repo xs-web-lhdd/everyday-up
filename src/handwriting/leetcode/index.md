@@ -59,5 +59,5 @@
 - [468. 验证IP地址](https://leetcode.cn/problems/validate-ip-address/) 又臭又长不写了，直接看官方题解吧臭傻逼！
 - [31. 下一个排列](https://leetcode.cn/problems/next-permutation/)
 - [235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)
-- [两个栈模拟队列的出队和入队---未刷]()
-- [面试题 01.06. 字符串压缩---未刷](https://leetcode.cn/problems/compress-string-lcci/)
+- [剑指 Offer 09. 用两个栈实现队列](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
+- [面试题 01.06. 字符串压缩](https://leetcode.cn/problems/compress-string-lcci/)

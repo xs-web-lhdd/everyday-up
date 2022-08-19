@@ -24,3 +24,6 @@
 #### 字节：
 - 成都商业化部门-生活服务（附面经：https://www.nowcoder.com/discuss/1003878?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
 - 番茄小说-ai lab （附面经：https://www.nowcoder.com/discuss/1008783?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
+
+#### 广州多益网络:
+- [林三心校招面经---比较常规](https://mp.weixin.qq.com/s/O2OJqPGkFkhhwjH-Pp8O_A)
