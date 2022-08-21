@@ -48,3 +48,43 @@ for (let item of obj) {
 }
 ```
 
+##### 如何让对象执行终止时的逻辑：
+通过内置的 return() 函数，当迭代时 break、return、throw Error 时会执行 return() 后的逻辑
+```js
+var obj = [1, 2, 3, 4, 5]
+
+obj[Symbol.iterator] = function () {
+  let index = 0
+  let keys = Object.keys(this)
+  let self = this
+
+  return {
+    next() {
+      if (index < keys.length) {
+        return {
+          value: self[keys[index++]],
+          done: false
+        }
+      } else {
+        return {
+          value: undefined,
+          done: true
+        }
+      }
+    },
+    return () {
+      console.log('来执行终止的逻辑');
+      return {
+        done: true
+      }
+    }
+  }
+}
+
+
+for (let i of obj) {
+  if (i === 3) throw Error()
+  console.log(i);
+}
+```
+

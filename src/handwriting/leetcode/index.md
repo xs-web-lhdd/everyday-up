@@ -1,4 +1,5 @@
 [LeetcodeTop/这个里面是一些leetcode笔试真题](https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/frontend.md)一定要刷一遍！（未刷完）
+[字节高频题目](https://mp.weixin.qq.com/s/JGWQq2htdRBTeaHhrC6NjQ)
 [一个字节佬给前端er的建议，文末有算法题，建议刷一遍](https://www.nowcoder.com/discuss/996023?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)（已刷完）
 [一个前辈的面经建议看](https://www.nowcoder.com/discuss/993849)
 
@@ -62,3 +63,4 @@
 - [剑指 Offer 09. 用两个栈实现队列](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 - [面试题 01.06. 字符串压缩](https://leetcode.cn/problems/compress-string-lcci/)
 - [剑指 Offer II 037. 小行星碰撞](https://leetcode.cn/problems/XagZNi/)
+- [498. 对角线遍历](https://leetcode.cn/problems/diagonal-traverse/)

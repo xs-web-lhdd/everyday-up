@@ -8,3 +8,8 @@
 - 兄弟关系的组件数据传递可选择$bus，其次可以选择$parent进行传递
 - 祖先与后代组件数据传递可选择attrs与listeners或者 Provide与 Inject
 - 复杂关系的组件数据传递可以通过vuex存放共享的变量
+
+##### provide 和 inject 绑定是不是可响应的?
+不是！
+
+如何做到响应式？

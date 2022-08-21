@@ -3,6 +3,9 @@
 - 数字化业务发展
 - nio power（问的比较细节，附链接：https://www.nowcoder.com/discuss/986684?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
 
+#### 携程：
+- 国际化（ibu）（感觉还可以，附链接：https://www.nowcoder.com/discuss/950362）
+
 #### 京东：
 - 京东健康（感觉比较难，附链接：https://www.nowcoder.com/discuss/975826）
 
@@ -27,3 +30,64 @@
 
 #### 广州多益网络:
 - [林三心校招面经---比较常规](https://mp.weixin.qq.com/s/O2OJqPGkFkhhwjH-Pp8O_A)
+
+#### Shein
+
+#### 荣耀
+
+#### 探探
+
+#### 用友
+
+#### OPPO
+
+#### 米哈游
+
+#### 网易
+
+#### 大疆
+
+#### 百度
+
+#### 旷视
+
+#### 小红书
+
+#### 猿辅导
+
+#### Zoom
+
+#### 搜狐
+
+#### 东方财富
+
+#### 快手
+
+#### 美团
+- 医药（还是有点难度的，https://www.nowcoder.com/discuss/1017090?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
+
+#### 京东
+
+#### shopee
+
+#### 微软（英文自我介绍！卒）
+
+#### 华为
+
+#### Garena
+
+#### 小马智行
+
+#### momcnta
+
+#### 联想
+
+#### 深信服
+
+#### 翼支付
+
+#### 贝壳
+
+#### 顺丰
+
+#### 小米
