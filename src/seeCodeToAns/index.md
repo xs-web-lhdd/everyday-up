@@ -241,3 +241,19 @@ function b() {
 console.log(b());
 ```
 > 知识点：作用域，作用域是静态的，在定义的时候就已经确定，而不是调用的时候确定。
+
+
+看代码：
+```js
+Promise(a).then(b).catch(c).then(d)没有抛出错误会执行什么
+
+// b里抛出错误会执行什么
+// a里抛出错误会执行什么
+```
+
+
+```js
+let ls = [1, 2, 3, 4]
+let ls1 = ls.map((item) => {})
+console.log(ls1) // [ undefined, undefined, undefined, undefined ]
+```

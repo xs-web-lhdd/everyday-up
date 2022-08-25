@@ -31,6 +31,9 @@
 #### 广州多益网络:
 - [林三心校招面经---比较常规](https://mp.weixin.qq.com/s/O2OJqPGkFkhhwjH-Pp8O_A)
 
+#### 爱奇艺：
+部门直推：https://mnowpick.nowcoder.com/m/hr?bossUid=4281&jobId=23755
+
 #### Shein
 
 #### 荣耀
@@ -62,6 +65,7 @@
 #### 东方财富
 
 #### 快手
+- [repeat、调度器、颜随机色生成、check全选太高频了这些](https://www.nowcoder.com/discuss/821047)
 
 #### 美团
 - 医药（还是有点难度的，https://www.nowcoder.com/discuss/1017090?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
