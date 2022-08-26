@@ -19,7 +19,14 @@ https://www.bilibili.com/video/BV1JZ4y1f7tU?from=search&seid=9229912515884661837
 
 [合成篇](https://juejin.cn/post/6844904155077672968)
 
+[牛友篇](https://www.nowcoder.com/discuss/975345?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined)
 ##### 如何寻址？
+
+
+#### DNS解析时，怎么让他预解析
+`<link rel="dns-prefetch" href="//www.zhihu.com"> `
+
+#### 怎么实现一个文件的提前加载
 
 ##### 你刚刚说多进程浏览器，你说说启动一个页面有什么进程？
 打开一个页面至少要有四个进程：浏览器进程、网络进程、渲染进程、GPU进程

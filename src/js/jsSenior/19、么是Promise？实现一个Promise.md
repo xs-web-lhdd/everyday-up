@@ -2,6 +2,9 @@
 
 https://juejin.cn/post/6844903607968481287
 
+#### Promise 追尾？
+[三元大佬](https://juejin.cn/post/6844904004007247880#heading-36)
+
 ##### 8.3 async/await 和 Promise 的关系
 
 - async/await 是消灭异步回调的终极武器。

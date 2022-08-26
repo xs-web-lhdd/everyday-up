@@ -10,3 +10,6 @@
 
 
 ##### 你刚刚说 localstorage 大小为 5M，如果超过了 5M 怎么办哪？
+
+
+[localstorage 一些操作](https://juejin.cn/post/7030585901524713508#heading-8)
