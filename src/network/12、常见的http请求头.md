@@ -21,10 +21,13 @@
 设置一些防盗链，比如直接在浏览器的地址栏中输入一个资源的URL地址，那么这种请求是不会包含Referer的。
 
 **Content-Length是什么的长度？**
-实体的传输字节长度。（实体长度和实体的传输长度是有区别，比如说gzip压缩下，消息实体长度是压缩前的长度，消息实体的传输长度是gzip压缩后的长度）
+实体的传输字节长度。（实体长度和实体的传输长度是有区别，比如说gzip压缩下，消息实体长度是压缩前的长度，消息实体的传输长度是gzip压缩后的长度）,`设置的比实际传输的小会截取多余的部分，比实际大会出错`，`Content-Length 用于定长传输`
 
 **知道Transfer-Encoding: chunked这个字段吗？**
-在数据内容不能确定，分块传输场景下使用。（无法在请求或者响应前明确指定Content-Length，所以Content-Length字段会被忽略不被发送）
+在数据内容不能确定，分块传输场景下使用。（无法在请求或者响应前明确指定Content-Length，所以Content-Length字段会被忽略不被发送）,`用于不定长传输`,表示分块传输数据，设置这个字段后会自动产生两个效果:
+- Content-Length 字段会被忽略
+- 基于长连接持续推送动态内容
+> 注意：最后是留有有一个空行的
 
 **Cookie中有哪些属性？**
 - Name：Cookie的名称。
@@ -44,6 +47,58 @@
 同源：scheme://ip/hostname:port一样表示同源
 同站：二级域名.顶级域名一样表示同站。
 [掘金好文](https://juejin.cn/post/6877496781505200142)
+
+
+### 了解HTTP的header的意义吗？前端有必要学习这些东西吗？
+
+
+### 对 Accept 系列字段了解多少？
+对于Accept系列字段的介绍分为四个部分: `数据格式`、`压缩方式`、`支持语言`和`字符集`。
+- 数据格式
+上一节谈到 HTTP 灵活的特性，它支持非常多的数据格式，那么这么多格式的数据一起到达客户端，客户端怎么知道它的格式呢？
+当然，最低效的方式是直接猜，有没有更好的方式呢？直接指定可以吗？
+答案是肯定的。这些类型体现在Content-Type这个字段，当然这是针对于发送端而言，接收端想要收到特定类型的数据，也可以用Accept字段。
+具体而言，这两个字段的取值可以分为下面几类:
+
+text： text/html, text/plain, text/css 等
+image: image/gif, image/jpeg, image/png 等
+audio/video: audio/mpeg, video/mp4 等
+application: application/json, application/javascript, application/pdf, application/octet-stream
+
+- 压缩方式
+当然一般这些数据都是会进行编码压缩的，采取什么样的压缩方式就体现在了发送方的`Content-Encoding`字段上， 同样的，接收什么样的压缩方式体现在了接受方的`Accept-Encoding`字段上。这个字段的取值有下面几种：
+
+gzip: 当今最流行的压缩格式
+deflate: 另外一种著名的压缩格式
+br: 一种专门为 HTTP 发明的压缩算法
+```js
+// 发送端
+Content-Encoding: gzip
+// 接收端
+Accept-Encoding: gzip
+```
+
+- 支持语言
+对于发送方而言，还有一个Content-Language字段，在需要实现国际化的方案当中，可以用来指定支持的语言，在接受方对应的字段为Accept-Language。如:
+```js
+// 发送端
+Content-Language: zh-CN, zh, en
+// 接收端
+Accept-Language: zh-CN, zh, en
+```
+
+- 代码字符集
+最后是一个比较特殊的字段, 在接收端对应为`Accept-Charset`，指定可以接受的字符集，而在发送端并没有对应的Content-Charset, 而是直接放在了Content-Type中，以charset属性指定。如:
+```js
+// 发送端
+Content-Type: text/html; charset=utf-8
+// 接收端
+Accept-Charset: charset=utf-8
+```
+
+见图：
+![](../../images/accept.png)
+
 
 
 

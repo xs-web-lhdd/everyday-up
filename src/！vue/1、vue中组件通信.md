@@ -41,3 +41,10 @@ eventbus/vuex/provide+inject
 不是！
 
 如何做到响应式？
+[vue3 官方介绍](https://cn.vuejs.org/api/options-composition.html#inject)
+意思是 provide/inject 是设计时有意设计为不是响应式的，解决方案是传入一个响应式的数据进去，那么这个数据仍会保持响应式，这样自然就解决了不是响应式的问题了。
+[vue2 官网介绍](https://v2.cn.vuejs.org/v2/api/#provide-inject)
+> 提示：provide 和 inject 绑定并不是可响应的。这是刻意为之的。然而，如果你传入了一个可监听的对象，那么其对象的 property 还是可响应的。
+
+##### 为啥 vue2 初始化的时候初始 inject 在前，然后进行响应式处理，然后 provide 在后？
+我个人的思考是，组件可能会根据 父组件的 provide 中取出一些数据进行一些当前组件数据的初始化，所以当前组件初始化的时候 inject 在前，provide 在后。

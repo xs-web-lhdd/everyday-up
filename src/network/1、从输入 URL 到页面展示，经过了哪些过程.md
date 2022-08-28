@@ -26,6 +26,10 @@ https://www.bilibili.com/video/BV1JZ4y1f7tU?from=search&seid=9229912515884661837
 #### DNS解析时，怎么让他预解析
 `<link rel="dns-prefetch" href="//www.zhihu.com"> `
 
+#### 域名服务器还有什么方法解析域名；DNS跟底层哪些协议相关？
+
+#### HTTP建立连接过程，说一些SSL，怎么实现的，其中的密码学相关知识（问了超多）？
+
 #### 怎么实现一个文件的提前加载
 
 ##### 你刚刚说多进程浏览器，你说说启动一个页面有什么进程？
