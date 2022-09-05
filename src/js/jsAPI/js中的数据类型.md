@@ -37,7 +37,7 @@ Object对象(包括普通Object、Function、Array、Date、RegExp、Math)
 
 1. `typeof`的作用？
 
-   区分数据类型，可以返回7种数据类型：`number、string、boolean、undefined、object、function` ，以及 `ES6` 新增的 `symbol`
+   区分数据类型，可以返回7种数据类型：`number、string、boolean、undefined、object、function` ，以及 `ES6` 新增的 `symbol 和 bigInt`
 
 2. `typeof` 能正确区分数据类型吗？
 
@@ -121,3 +121,36 @@ typeof与instanceof都是判断数据类型的方法，区别如下：
 ##### typeof为什么对null错误的显示
 
 这只是 JS 存在的一个悠久 Bug。在 JS 的最初版本中使用的是 32 位系统，为了性能考虑使用低位存储变量的类型信息，000 开头代表是对象然而 null 表示为全零，所以将它错误的判断为 object
+
+
+> 注意：Symbol.toStringTag 可以改变 `Object.prototype.toSting.call(xxx)` 的返回值。
+> Symbol.hasInstance 会改变 instanceof 的行为：
+MDN解释：**Symbol.hasInstance**用于判断某对象是否为某构造器的实例。因此你可以用它自定义 instanceof 操作符在某个类上的行为。
+```js
+function Xiao(){}
+const xiao = new Xiao
+xiao instanceof Xiao // true ====> Xiao[Symbol.hasInstance](xiao)
+```
+这个是内部的方法，不支持重写，当然，我们可以在原型上改写。
+```js
+Object.definePrototype(Xiao, Symbol.hasInstance, {
+   value: (v) => Boolean(v)
+}) // 注意这里 value 一定是个函数，因为要调用！
+const x = new Xiao
+x instanceof Xiao //true
+0 instanceof Xiao //false
+1 instanceof Xiao //true
+```
+
+错误示范：
+```js
+function Xiao() {}
+
+Xiao[Symbol.hasInstance] = function () {
+  return false
+} // 不起作用的
+
+const obj = new Xiao()
+
+console.log(obj instanceof Xiao); // true 不起作用的
+```

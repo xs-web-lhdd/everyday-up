@@ -24,3 +24,7 @@
     3. 性能：提升为合成层，不会触发重绘，性能较高
     4. 继承：会被子元素继承，且子元素并不能通过 `opacity: 1` 来取消隐藏
     5. `transition`：`transition` 支持 `opacity`。
+
+
+### 隐藏元素有那些方法？
+上面三种 + position: absolute; left: -999999px;
