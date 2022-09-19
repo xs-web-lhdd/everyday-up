@@ -18,3 +18,8 @@ GET POST HEAD OPTIONS PUT DELETE TRACE CONNECT
 
 ##### 知道哪些请求方式？为什么要分这么多的请求方式？
 get post head put delete options trace connect
+
+
+##### patch 和 put 的区别？
+PATCH：更新部分资源，非幂等，副作用
+PUT：更新整个资源，具有幂等性，副作用

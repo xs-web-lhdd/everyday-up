@@ -254,6 +254,87 @@ Promise(a).then(b).catch(c).then(d)没有抛出错误会执行什么
 
 ```js
 let ls = [1, 2, 3, 4]
-let ls1 = ls.map((item) => {})
+let ls1 = ls.map((item) => {}) // 没有返回值就默认返回 undefined
 console.log(ls1) // [ undefined, undefined, undefined, undefined ]
 ```
+
+<!-- 4399 笔试题 -->
+```js
+setTimeout(() => {
+  console.log(1);
+}, 100)
+
+new Promise((resolve) => {
+  console.log(2);
+  resolve()
+  console.log(3);
+}).then(() => {
+  console.log(4);
+  setTimeout(() => {
+    console.log(6);
+  }, 10);
+})
+
+console.log(7);
+console.log(8);
+// 2 3 7 8 4 6 1
+```
+> 知识点：事件循环（主要是 setTimeout 10 ms在前面，100 ms在后面）
+
+
+<!-- 4399 笔试题： -->
+```js
+function Parent() {
+  this.a = 1
+  this.b = [1, 2, this.a]
+  this.c = {
+    demo: 3
+  }
+  this.show = function () {
+    console.log(this.a, this.b, this.c.demo);
+  }
+}
+
+function Child() {
+  this.a = 2
+  this.change = function () {
+    this.b.push(this.a)
+    this.a = this.b.length
+    this.c.demo = this.a
+  }
+}
+
+
+let parent = new Parent()
+parent.show()
+// 1 [1,2,1] 3
+Child.prototype = new Parent()
+let child1 = new Child()
+let child2 = new Child()
+child1.a = 11
+child2.a = 12
+child1.change()
+child2.change()
+parent.show()
+// 1 [1,2,1] 3
+child1.show()
+// 4 [1,2,1,11,12] 5
+child2.show()
+// 5 [1,2,1,11,12] 5
+```
+> 知识点：原型链
+
+
+<!-- 4399 笔试题： -->
+```js
+(function () {
+  var x = y = 1
+})()
+
+var z;
+
+console.log(z); // undefined
+console.log(y); // 1
+console.log(x); // x is not defined
+```
+> 考察作用域：y没有定义，所以会挂载在全局中，z 没赋值所以是 undefined，x 在函数内访问不到

@@ -6,3 +6,12 @@
 - 3、Commonjs是单个值导出，ES6模块化可以多个值导出
 - 4、Commonjs是动态语法可写在函数体中，ES6模块化静态语法只能写在顶层
 - 5、Commonjs的this是当前模块化，ES6模块化的this是undefined
+
+
+### 为什么会出现 esmodule？
+
+
+### esmodule 在客户端 js 脚本能不能使用？
+
+
+### esmodule 中 import 和 export 的原理？

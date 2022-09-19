@@ -1,4 +1,4 @@
-##### 12、nexttick了解吗？
+### 12、nexttick了解吗？
 
 
 #### 答题思路：
@@ -35,3 +35,6 @@ https://github1s.com/vuejs/core/blob/HEAD/packages/runtime-core/src/scheduler.ts
 
 nextTick定义：
 https://github1s.com/vuejs/core/blob/HEAD/packages/runtime-core/src/scheduler.ts#L58-L59
+
+
+### 如果父组件和子组件的 mounted 中都用到了 nextTick，会怎么执行，都会执行吗？

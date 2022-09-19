@@ -50,3 +50,6 @@ https://github1s.com/vuejs/core/blob/HEAD/packages/reactivity/src/computed.ts#L4
 
 watch的实现:
 https://github1s.com/vuejs/core/blob/HEAD/packages/runtime-core/src/apiWatch.ts#L158-L159
+
+
+### computed 是必须要求 return 一个值吗？

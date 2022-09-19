@@ -1,9 +1,28 @@
 #### 帆软：
 已投递（查进度：https://crm.finereporthelp.com/WebReport/decision/view/report?viewlet=recruit/%E7%BD%91%E7%94%B3%E6%9F%A5%E8%AF%A2.cpt&ref_t=design&op=write&ref_c=d091904c-97a7-4d4f-bb62-ac5d5a580bf1）
 
+简历挂！
+
 #### 星辉游戏：
 已投递
 
+#### 奇虎 360 ：
+已投递：https://360campus.zhiye.com/personal/deliveryRecord
+
+#### 经纬恒润：
+已投递：https://wecruit.hotjob.cn/SU62a93e760dcad45229a827cc/pb/posDetail.html?postId=62a93f2b2f9d24718848a154&postType=intern&isFollowTimeRules=true
+
+#### 富途：
+已投递：https://app.mokahr.com/campus_apply/futu5/1697#/job/045bcbe8-fdc4-4add-8a3d-be9bf90f14c3/campus_apply/thanks?jobId=045bcbe8-fdc4-4add-8a3d-be9bf90f14c3&recommendCode=NTAKvpe&codeType=1&isRecommendation=false&applyInfo%5BaimWorkCity%5D=%E6%B7%B1%E5%9C%B3%E5%B8%82&applyInfo%5BrecommendCode%5D=NTAKvpe&candidateName=%E5%88%98%E8%B1%AA&candidateId=368838577
+
+#### 思沃特：
+已投递：https://join.thoughtworks.cn/account?autoExpand
+
+#### 九号公司
+已投递：https://app.mokahr.com/campus_apply/ninebot/45627?recommendCode=DSVatMV3#/candidateHome/applications
+
+#### 中望软件：
+已投递：https://app.mokahr.com/campus_apply/zwcad/28356#/candidateHome/applications
 
 #### 金山：
 投递链接：https://join.wps.cn/campus-recruitment/wps/41436#/jobs?keyword=%E5%89%8D%E7%AB%AF&zhineng=111581&page=1
@@ -11,6 +30,9 @@
 
 #### 4399：
 投递链接：https://web.4399.com/campus
+
+已投递：https://hr.4399om.com/?r=userCenter/index
+https://mp.weixin.qq.com/s/W_SIjK_faFbxb_zdHwf39A
 
 #### 蔚来：
 - 车联云-数字系统（问的比较基础，附链接：https://www.nowcoder.com/discuss/999131?channel=-1&source_id=discuss_terminal_nctrack&trackId=undefined）
@@ -22,6 +44,9 @@
 
 #### 京东：
 - 京东健康（感觉比较难，附链接：https://www.nowcoder.com/discuss/975826）
+
+#### 去哪网：
+内推群：696736248
 
 #### B 站：
 - OGV（比较偏科班基础，附链接：https://www.nowcoder.com/discuss/976405）
@@ -47,6 +72,12 @@
 
 #### 爱奇艺：
 部门直推：https://mnowpick.nowcoder.com/m/hr?bossUid=4281&jobId=23755
+
+#### 斗鱼：
+投递链接：https://app.mokahr.com/campus_apply/douyu/7623#/job/538beb11-5d9b-4c03-8f08-0afc22391288
+
+#### 三七互娱：
+已投递：https://app.mokahr.com/campus_apply/37/25238?recommendCode=DSfX1AVD#/job/30d9e8ea-7481-4cff-be39-5ebdece0c5b4/campus_apply/thanks?jobId=30d9e8ea-7481-4cff-be39-5ebdece0c5b4&codeType=2&applyInfo%5BaimWorkCity%5D=%E5%B9%BF%E5%B7%9E%E5%B8%82&applyInfo%5BrecommendCode%5D=DSfX1AVD&candidateName=%E5%88%98%E8%B1%AA&candidateId=368136263
 
 #### Shein
 
@@ -114,6 +145,8 @@
 #### 联想
 
 #### 深信服
+- 喜欢问 Promise
+- 数组去重，原地去重，不开新数组，不用数组方法
 
 #### 翼支付
 

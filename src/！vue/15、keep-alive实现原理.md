@@ -1,4 +1,4 @@
-##### 15、知道 keep-alive 吗？详细说说？
+### 15、知道 keep-alive 吗？详细说说？
 
 ###### 思路：
 1、缓存用 keep-alive，它的作用和用法
@@ -59,3 +59,6 @@ https://github1s.com/vuejs/core/blob/HEAD/packages/runtime-core/src/components/K
 https://github1s.com/vuejs/core/blob/HEAD/packages/runtime-core/src/components/KeepAlive.ts#L241-L242
 
 测试缓存特性，test-v3.html
+
+
+### keep-alive 怎么实现的？
