@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="copy">copy</button>
+  <span class="lang">vue</span>
+  <!-- <pre id="pre">
+    <code>
+      <span class="line">
+        <span style="color:#89DDFF;"><</span>
+        <span style="color:#F07178;">template</span>
+        <span style="color:#89DDFF;">></span>
+      </span>
+    </code> -->
+  <pre>
+    <span>111</span>
+    <span>222</span>
+    <span>333</span>
+  </pre>
+
+  <textarea name="" id="ppp" cols="30" rows="10">1111111</textarea>
+</body>
+<script>
+  copy.addEventListener('click', function () {
+    const sibling = copy.nextElementSibling?.nextElementSibling
+    let { innerText: text = '' } = sibling
+
+    copyToClipboard(text).then(() => {
+      console.log('拷贝成功');
+    })
+  })
+
+  async function copyToClipboard(text) {
+    try {
+      // 把 text 复制到粘贴板上
+      return navigator.clipboard.writeText(text)
+    } catch {
+      console.log('报错啦哥哥');
+    }
+  }
+</script>
+
+</html>

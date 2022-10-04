@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="copy">copy</button>
+  <span class="lang">vue</span>
+  <!-- <pre id="pre">
+    <code>
+      <span class="line">
+        <span style="color:#89DDFF;"><</span>
+        <span style="color:#F07178;">template</span>
+        <span style="color:#89DDFF;">></span>
+      </span>
+    </code> -->
+  <pre>
+    <span>111</span>
+    <span>222</span>
+    <span>333</span>
+  </pre>
+
+  <textarea name="" id="ppp" cols="30" rows="10">1111111</textarea>
+</body>
+<script>
+  copy.addEventListener('click', function () {
+    const sibling = copy.nextElementSibling?.nextElementSibling
+    let { innerText: text = '' } = sibling
+
+    copyToClipboard(text).then(() => {
+      console.log('拷贝成功');
+    })
+  })
+
+  async function copyToClipboard(text) {
+    try {
+      const element = document.createElement('textarea')
+      // 拿到之前焦点的元素: document.activeElement 是用来获取当前页面的焦点元素
+      const previouslyFocusedElement = document.activeElement
+
+      element.value = text
+
+      // Prevent keyboard from showing on mobile
+      // 防止键盘显示在手机上 ( 表单设置 readonly 属性后就不能对表单进行编辑,自然就不会有键盘出现)
+      element.setAttribute('readonly', '')
+
+      element.style.contain = 'strict'
+      element.style.position = 'absolute'
+      element.style.left = '-9999px'
+      // 防止iOS上的缩放
+      element.style.fontSize = '12pt' // Prevent zooming on iOS
+
+      // 返回一个 Selection 对象，表示用户选择的文本范围或光标的当前位置。
+      const selection = document.getSelection()
+      const originalRange = selection
+        ? selection.rangeCount > 0 && selection.getRangeAt(0)
+        : null
+
+      document.body.appendChild(element)
+      // 选中这个 textarea 也就是相当于获取焦点
+      element.select()
+
+      // Explicit selection workaround for iOS
+      // iOS的显式选择方法
+      // 用来确定复制内容的开始位置和结束位置
+      element.selectionStart = 0
+      element.selectionEnd = text.length
+
+      // 该方法允许运行命令来操纵可编辑内容区域的元素。 这里是执行 copy 命令
+      document.execCommand('copy')
+      document.body.removeChild(element)
+    } catch {
+      console.log('报错啦哥哥');
+    }
+  }
+</script>
+
+</html>
