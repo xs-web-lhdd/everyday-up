@@ -21,3 +21,13 @@ setup 先执行
 
 ##### 虚拟 DOM 比较在那个阶段？
 在 vue（2 3 都是） 中是在 updated 之前进行 diff
+
+##### ajax 发送请求在 vue 的哪个生命周期发送？
+
+
+##### vue 的生命周期是否能做箭头函数？
+vue2 不可以，因为 this 的缘故，vue3 可以
+
+
+##### window.onload 相当于哪个生命周期？created 相当于那个生命周期？（？？？什么垃圾问题）
+mounted 、 window.onreadey

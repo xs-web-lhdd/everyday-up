@@ -147,6 +147,8 @@ https://mp.weixin.qq.com/s/W_SIjK_faFbxb_zdHwf39A
 #### 深信服
 - 喜欢问 Promise
 - 数组去重，原地去重，不开新数组，不用数组方法
+[深圳](https://www.nowcoder.com/discuss/1073449)
+[](https://www.nowcoder.com/discuss/1073347)
 
 #### 翼支付
 

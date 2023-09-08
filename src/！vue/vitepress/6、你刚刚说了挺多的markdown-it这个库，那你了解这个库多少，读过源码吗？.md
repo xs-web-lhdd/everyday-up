@@ -1,5 +1,6 @@
 ### 你刚刚说了挺多的 markdown-it 这个库，那你对这个库了解多少，读过源码吗？
 
+[官方文档](https://markdown-it.github.io/markdown-it)
 > 大佬文章：https://juejin.cn/post/7054876950589866021
 
 是什么：`markdown-it`是一个 markdown 解析器，并且易于拓展。
@@ -62,7 +63,53 @@ default_rules.code_inline = function (tokens, idx, options, env, slf) {
 
 
 
-### 如何对 markdown-it 的一些规则进行扩展呢？（怎么编写 plugin 呢？）
-[编写插件一](https://juejin.cn/post/7055238938092371975)
-[编写插件二](https://juejin.cn/post/7055597191150174238)
-[编写插件三](https://juejin.cn/post/7056705090811330574)
+### 如何对 markdown-it 的一些规则进行扩展呢？（怎么编写 plugin 呢？）！！！很重要噻
+[编写插件一，总览写 markdown-it 中的 plugin 时的常规四种写法](https://juejin.cn/post/7055238938092371975)
+[编写插件二， 从 parse 下手](https://juejin.cn/post/7055597191150174238)
+[编写插件三，从 render 下手](https://juejin.cn/post/7056705090811330574)
+
+总结一下，写 plugin 可以从以下几点下手：
+1、在 markdown-it 的结果外面包一层代码（标签）
+2、对 markdown-it 的结果进行替换，通过 replace API 和 正则更改一部分结果的内容进行返回
+3、对解析后的 token 进行更改，然后添加一些内容（比如：属性）然后让内置的 markdown-it 的原来的 rule 进行渲染生成代码
+4、对原来的render 的 rule 进行更改或者扩展，然后增加或者更改内容。（比如内置的 containerPlugin 就是给结果外边增加代码的）
+5、（最复杂的）给 markdown-it 的 parse 解析的时候按照`合理的顺序(比如 markdown-it 源码就是先进行 block 的解析再进行 inline 的解析，因为block可能包含inline，这样防止 inline 被忘记解析)`插入自己写的 ruler，然后通过自己定义规则的正则然后进行匹配内容，然后将想要的效果变成 token 插入（或替换）到原先的 token 里面，然后再 render 的 ruler 进行 render 即可。例子：[编写插件二，从 parse 下手](https://juejin.cn/post/7055597191150174238)
+```js
+      md.block.ruler.before('paragraph', 'myplugin', function (state: any, startLine: any, endLine: any) {
+        var ch, level, tmp, token,
+          // 每一行的开始位置
+          pos = state.bMarks[startLine] + state.tShift[startLine],
+          // 每一行的结束位置 
+          max = state.eMarks[startLine];
+        ch = state.src.charCodeAt(pos);
+
+        // 如果开始位置大于等于结束位置 返回 false 就不继续往后遍历执行该函数了
+        if (ch !== 0x40/*@*/ || pos >= max) { return false; }
+
+        // 截取该行的内容
+        let text = state.src.substring(pos, max);
+        // 定义正则
+        let rg = /^@\s(.*)/;
+        let match = text.match(rg);
+
+        if (match && match.length) {
+          // 改变 token 
+          let result = match[1];
+          token = state.push('heading_open', 'h1', 1);
+          token.markup = '@';
+          token.map = [startLine, state.line];
+
+          token = state.push('inline', '', 0);
+          token.content = result;
+          token.map = [startLine, state.line];
+          token.children = [];
+
+          token = state.push('heading_close', 'h1', -1);
+          token.markup = '@';
+
+          // 返回 true 告诉程序 行 没有遍历完,继续进行遍历 下一行
+          state.line = startLine + 1;
+          return true;
+        }
+      })
+```

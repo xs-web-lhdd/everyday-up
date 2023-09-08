@@ -338,3 +338,32 @@ console.log(y); // 1
 console.log(x); // x is not defined
 ```
 > 考察作用域：y没有定义，所以会挂载在全局中，z 没赋值所以是 undefined，x 在函数内访问不到
+
+
+```js
+let a
+let b = '小明'
+console.log(a || b) // '小明'
+b = '小红'
+console.log(a && b); // undefined
+```
+> 考察运算符：第一个 log 没有进行短路操作，第二个 log 进行算路操作
+
+
+
+```js
+// 暂时性死区！
+console.log(b);
+let b = 0;
+console.log(c); // fn
+
+function c() {}
+var tmp = 123;
+if (true) {
+  // 暂时性死区！
+  tmp = 'abc';
+  let tmp;
+}
+console.log(tmp);
+```
+> 考察暂时性死区：`b`（全局作用域） 和 `tmp`（块级作用域） 都是暂时性死区，不能在 let 声明前使用

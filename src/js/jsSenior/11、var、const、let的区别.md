@@ -45,3 +45,6 @@ a = a // 报错 VM221:1 Uncaught TypeError: Assignment to constant variable.at <
 4. 修改声明的变量
    + var和let可以
    + const声明一个只读的常量。一旦声明，常量的值就不能改变，但对于对象和数据这种引用类型，内存地址不能修改，可以修改里面的值。
+
+
+#### 了解 const 的实现原理吗？

@@ -76,3 +76,6 @@ Reflect.apply(Math.floor, undefined, [1.75]) // 1
 
 
 ### 在 Proxy 中修改值，修改的是原始的值还是 Proxy 的值？
+
+
+### 传入 Proxy 的参数是什么？

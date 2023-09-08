@@ -41,7 +41,7 @@ vite:
 
 ##### 为什么 vite 要进行预构建？
 [vite的预构建](https://blog.csdn.net/CRMEB/article/details/123750395)
-- vite 引入了预构建机制。在预构建工具的选择上，vite选择了 esbuild 。esbuild 使用 Go 编写，比以 JavaScript 编写的打包器构建速度快 10-100 倍，有了预构建，再利用浏览器的esm方式按需加载业务代码，动态实时进行构建，结合缓存机制，大大提升了服务器的启动速度。
+- vite 引入了预构建机制。在预构建工具的选择上，vite选择了 esbuild 。esbuild 使用 Go(直接转换成机器码，而无需字节码) 编写，比以 JavaScript 编写的打包器构建速度快 10-100 倍，有了预构建，再利用浏览器的esm方式按需加载业务代码，动态实时进行构建，结合缓存机制，大大提升了服务器的启动速度。
 
 - 来自node_modules中的模块依赖是需要预构建的。例如import ElementPlus from ‘element-plus’。因为在浏览器环境下，是不支持这种裸模块引用的（bare import）。另一方面，如果不进行构建，浏览器面对由成百上千的子模块组成的依赖，依靠原生esm的加载机制，每个的依赖的import都将产生一次http请求。面对大量的请求，浏览器是吃不消的。因此客观上需要对裸模块引入进行打包，并处理成浏览器环境下支持的相对路径或路径的导入方式。例如：import ElementPlus from ‘/path/to/.vite/element-plus/es/index.mjs’。
 
